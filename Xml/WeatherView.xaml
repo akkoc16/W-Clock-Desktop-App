@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="ClockApp.WeatherView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:ClockApp"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:models="clr-namespace:ClockApp.Models"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             x:Name="weatherviewcontrol"
+             Loaded="SetTempEvent"
+             d:DesignHeight="300" d:DesignWidth="345">
+    <Grid Name="parentGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Column="1" Row="0" Margin="0,0,0,119">
+            <TextBlock Name="TemperatureLabel" Text="Temperature:"
+                                         VerticalAlignment="Center" Foreground="White"
+                                         HorizontalAlignment="Left" Width="120" FontSize="16" />
+
+        </Grid>
+        <Grid Column="1" Margin="0,32,0,91">
+            <TextBlock Name="WindLabel" Text="Wind:"       
+                                         VerticalAlignment="Center" Foreground="White"
+                                         HorizontalAlignment="Left" Width="120" FontSize="16" />
+        </Grid>
+        <Grid Column="1" Margin="0,63,0,57">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="139*"/>
+                <ColumnDefinition Width="156*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="HumidityLabel" Text="Humidity:"
+                                         VerticalAlignment="Center" Foreground="White"
+                                         HorizontalAlignment="Left" Width="120" FontSize="16" />
+
+        </Grid>
+        <Grid Grid.Column="1" Margin="0,93,0,27">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="139*"/>
+                <ColumnDefinition Width="156*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="CloudLabel" Text="Clouds:"
+                                         VerticalAlignment="Center" Foreground="White"
+                                         HorizontalAlignment="Left" Width="120" FontSize="16" />
+
+        </Grid>
+        <TextBlock Name="TempText"    HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"
+                          Foreground="#FF3A8AB7" Margin="100,-120,0,0" FontWeight="Bold" Grid.Column="1" />
+        <TextBlock Name="WindText"    HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"
+                          Foreground="#FF3A8AB7" Margin="50,-60,0,0" FontWeight="Bold" Grid.Column="1" />
+        <TextBlock Name="HumidityText"    HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"
+                          Foreground="#FF3A8AB7" Margin="80,10,0,0" FontWeight="Bold" Grid.Column="1" />
+        <TextBlock Name="CloudText"    HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16"
+                          Foreground="#FF3A8AB7" Margin="60,70,0,0" FontWeight="Bold" Grid.Column="1" />
+
+
+    </Grid>
+</UserControl>

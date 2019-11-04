@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Clock.ico</ApplicationIcon>
+    <StartupObject>ClockApp.App</StartupObject>
+    <Platforms>AnyCPU;x64</Platforms>
+    <Win32Resource />
+    <AssemblyName>ClockApp</AssemblyName>
+    <RootNamespace>ClockApp</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AboutWindow.xaml" />
+    <None Remove="AlarmNotificationDisplayPart.xaml" />
+    <None Remove="Resources\alarm-colored-bg.ico" />
+    <None Remove="Resources\alarm-colored.ico" />
+    <None Remove="SettingsWindow.xaml" />
+    <None Remove="StopwatchView.xaml" />
+    <None Remove="TimerNotificationDisplayPart.xaml" />
+    <None Remove="TimerView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dragablz" Version="0.0.3.203" />
+    <PackageReference Include="MaterialDesignThemes" Version="2.6.0" />
+    <PackageReference Include="ToastNotifications" Version="2.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\alarm-colored-bg.ico" />
+    <Resource Include="Resources\alarm-colored.ico" />
+  </ItemGroup>
+
+</Project>
