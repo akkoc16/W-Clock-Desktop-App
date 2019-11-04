@@ -6,13 +6,13 @@ New arrangements can be made to the application under development, with the exce
 #Features
 
 
-Event Scheduler
-Daily Weather Info
-Timer
-Stopwatch
-Digital Clock on top
-Alarms music settings
-Custom alarms and timers setup autosaving
-Notifications on the bottom right of the screen
-Minimize in notification area
+Event Scheduler,
+Daily Weather Info,
+Timer,
+Stopwatch,
+Digital Clock on top,
+Alarms music settings,
+Custom alarms and timers setup autosaving,
+Notifications on the bottom right of the screen,
+Minimize in notification area,
 Pin always on top
