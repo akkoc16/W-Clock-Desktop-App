@@ -18,10 +18,15 @@ New arrangements can be made to the application under development, with the exce
 
 ### Screens
 
-|                             |                             |                             |                             |                              |
-| :-------------------------: | :-------------------------: | :-------------------------: | :-------------------------: | :--------------------------: |
-| ![img-1](assets/s6.PNG '1') | ![img-2](assets/s7.PNG '2') | ![img-3](assets/s8.PNG '3') | ![img-4](assets/s9.PNG '4') | ![img-5](assets/s10.PNG '5') |
+|                             |                             |                             |
+| :-------------------------: | :-------------------------: | :-------------------------: |
+| ![img-1](screenshots/s1.JPG '1') | ![img-2](screenshots/s2.JPG '2') | ![img-3](screenshots/s3.JPG '3') |
 
-|                             |                             |                             |                             |                              |
-| :-------------------------: | :-------------------------: | :-------------------------: | :-------------------------: | :--------------------------: |
-| ![img-6](assets/s1.PNG '1') | ![img-7](assets/s2.PNG '2') | ![img-8](assets/s3.PNG '3') | ![img-9](assets/s4.PNG '4') | ![img-10](assets/s5.PNG '5') |
+|                             |                             |                             |
+| :-------------------------: | :-------------------------: | :-------------------------: |
+| ![img-5](screenshots/s4.JPG '1') | ![img-6](screenshots/s5.JPG '2') | ![img-8](screenshots/s6.JPG '3') |
+
+
+### GIPHY
+
+![W-Clock](https://github.com/akkoc16/W-Clock-Desktop-App/blob/master/screenshots/gif-clock.gif)
